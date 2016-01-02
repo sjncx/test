@@ -19,8 +19,8 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 //    mexPrintf("num is: %d\n", nrhs);
 //     p1 = (int )mxGetpr(prhs[0]);
 //     p2 = (int )prhs[1];
-//      p1 = ((int)(* mxGetPr(prhs[0])));
-//      p2 = ((int *)mxGetPr(prhs[1]));
+      p1 = ((int)(* mxGetPr(prhs[0])));
+      p2 = ((int *)mxGetPr(prhs[1]));
     Num = mxGetScalar(prhs[2]);
     for(i=0; i<Num;i++)
     {
